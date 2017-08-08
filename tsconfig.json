@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "formatCodeOptions": {
+    "indentSize": 2,
+    "tabSize": 2,
+    "newLineCharacter": "\r\n",
+    "convertTabsToSpaces": true,
+    "insertSpaceAfterCommaDelimiter": true
+  },
+  "exclude": [],
+  "compileOnSave": false,
+  "filesGlob": [
+    "./app/**/*.{ts, tsx}",
+    "!node_modules/",
+    "!app/bower_components/"
+  ],
+  "files": [
+    "./app/example/scene1.ts",
+    "./app/src/app.ts",
+    "./app/src/component/Background/Background.ts",
+    "./app/src/component/Image/BaseImage.ts",
+    "./app/src/component/Image/CharacterImage.ts",
+    "./app/src/component/Image/Layout.ts",
+    "./app/src/component/Scene/Scene.ts",
+    "./app/src/enum/EventType.ts",
+    "./app/src/enum/LayoutType.ts",
+    "./app/src/interface/EventInterface.ts",
+    "./app/src/interface/PropInterface.ts",
+    "./app/src/manager/file/FileManager.ts",
+    "./app/src/manager/Scene/SceneManager.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}

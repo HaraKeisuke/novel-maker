@@ -1,0 +1,32 @@
+{
+  "name": "nove_maker",
+  "version": "0.0.0",
+  "author": "",
+  "main": "app/build/index.js",
+  "dependencies": {
+    "@types/createjs": "0.0.29",
+    "gulp": "^3.9.1",
+    "gulp-webserver": "^0.9.1",
+    "install": "^0.10.1",
+    "npm": "^5.3.0",
+    "pixi.js": "^4.5.3",
+    "typescript": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/pixi.js": "^4.5.1",
+    "browserify": "^14.4.0",
+    "gulp": "^3.6.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-restart": "^0.1.1",
+    "gulp-shell": "^0.4.3",
+    "gulp-watch": "^4.3.11",
+    "mocha": "*",
+    "run-sequence": "^1.2.2",
+    "tsify": "^3.0.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "main": "gulp buildrun",
+    "test": "gulp build && mocha"
+  }
+}
