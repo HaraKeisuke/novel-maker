@@ -35,7 +35,7 @@ gulp.task('build-editer', function () {
 
 
 gulp.task('sass', function(){
-  gulp.src('./sass/**/*.scss')
+  gulp.src(['./sass/**/*.scss', "./sass/editer/**/*.scss"])
     .pipe(sassGlob())
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(gulp.dest('./css/'));
@@ -43,7 +43,7 @@ gulp.task('sass', function(){
 
 //自動監視のタスクを作成(sass-watchと名付ける)
 gulp.task('sass-watch', ['sass'], function(){
-  gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch(['./sass/editer/editer.scss', "./sass/editer/**/*.scss"], ['sass']);
 });
 
 

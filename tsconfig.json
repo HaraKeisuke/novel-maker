@@ -6,6 +6,10 @@
     "target": "es5",
     "jsx": "react"
   },
+  "formatCodeOptions": {
+    "indentSize": 2,
+    "tabSize": 2
+  },
   "include": [
     "./app/**/*.{ts, tsx}"
   ]
